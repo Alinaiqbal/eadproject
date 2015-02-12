@@ -1,0 +1,30 @@
+﻿@model List<ClassManagement.Models.querybox>
+@{
+    ViewBag.Title = "checkqueries";
+    Layout = "~/Views/Shared/_studlayout.cshtml";
+}
+
+        <h1>Check Queries</h1>
+     <div id="checkqueries" class="input">
+                            <table border="1" style="width:100%">
+                                <tr>
+                                    
+                                    <td> Name </td>
+                                    <td> Email </td>
+                                    <td> Message</td>
+
+                                </tr> 
+
+                          @foreach(var v in @Model)
+                                {
+                                    <tr>
+                                        <td>@v.name</td>
+                                        <td>@v.email</td>
+                                        <td>@v.message</td>
+                                 
+                                        </tr>
+                                      
+                                } 
+
+                            </table>
+ </div>

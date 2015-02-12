@@ -1,0 +1,180 @@
+﻿@{
+    
+    ViewBag.Title = "_studlayout";
+}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Class Management System</title>
+<meta name="keywords" content="mini social, free download, website templates, CSS, HTML" />
+<meta name="description" content="Mini Social is a free website template from templatemo.com" />
+
+<link href="~/Content/templatemo_style.css" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" href="~/Content/coda-slider.css" type="text/css" media="screen" charset="utf-8" />
+
+@*<script src="~/script/jquery-1.2.6.js" type="text/javascript"></script>*@
+<script src="~/Script/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="~/Script/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Scripts/jquery-1.2.6.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            var flag = 0;
+            var flag1 = 0;
+            var flag2 = 0;
+            var flag3 = 0;
+            $('#dd').hide();
+            $('#d2').hide();
+         
+            $("#d1").mouseover(function () {
+                if (flag == 0) {
+                    $('#dd').show();
+                    flag = 1;
+                }
+
+                else if (flag == 1) {
+                    $('#dd').hide();
+                    flag = 0;
+                }
+            });
+
+
+
+
+        });
+    </script>
+
+<style type="text/css">
+    .buttons { 
+  width: 30%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: green; 
+  margin:auto;
+  
+}
+.buttons button { 
+  width: 100%;
+}
+
+    .input {
+        margin-left:60px;
+       
+       
+    }
+    .textfield {
+        background-color:black;
+    }
+    .cgpa {
+        margin-left:350px;
+       
+        
+    }
+</style>
+
+</head>
+
+    
+<body>
+
+<div id="slider">
+	
+    <div id="templatemo_sidebar">
+    	<div id="templatemo_header">
+        	<h1> Online Class Management System </h1>
+        </div> <!-- end of header -->
+     
+     
+    <ul class="navigation">
+      <div id="menu">   
+        
+      
+         
+ <li><a href="/Student/studindex" id="h1">profile<span class="ui_icon home"></span></a></li>
+
+           
+          
+                <div id="d1">
+                   <li id="sub"><a href="#subitem1">Subject<span class="ui_icon aboutus"></span></a></li>
+         </div>
+
+
+        <div id="dd">
+                        <ul id="list">
+
+                                 
+                               
+                                    <li><a href="/Student/Files">Files<span class="ui_icon aboutus"></span></a></li>
+                                     <li><a href="/Student/ViewAttendance">Attendance<span class="ui_icon aboutus"></span></a></li>
+                                    @*<li><a href="/Student/showhometask">Hometask<span class="ui_icon aboutus"></span></a></li>*@
+                                  @*  <li><a href="/Student/courseoutline">course outline<span class="ui_icon aboutus"></span></a></li>*@
+                                     <li><a href="/Student/showresult">course result<span class="ui_icon aboutus"></span></a></li>
+                                </ul>
+                     </div>             
+                      
+           <li><a href="/Student/showupdates">Updates<span class="ui_icon services"></span></a></li>
+                @*    <li><a href="/Student/datesheet">Datesheet<span class="ui_icon services"></span></a></li>*@
+                    <li><a href="/Student/querybox">QueryBox<span class="ui_icon contactus"></span></a></li>
+                 <li><a href="/Home/Login">Logout<span class="ui_icon contactus"></span></a></li>
+        
+            </ul>     
+        </div>   
+    <div>   
+
+    </div> <!-- end of sidebar -->
+
+	<div id="templatemo_main">
+    	
+        
+        
+        <div id="content">
+        
+        <!-- scroll -->
+        
+        	
+            <div class="scroll">
+                <div class="scrollContainer">
+                
+                    <div class="panel" id="home">
+
+                       @RenderBody()
+
+                         
+                           
+                </div>
+                        
+                      <div class="cleaner_h40"></div> 
+                    
+                        
+                
+                    </div> 
+                    <!-- end of home -->
+
+
+          
+
+                     
+                </div>
+			</div>
+            
+        <!-- end of scroll -->
+        
+        </div> <!-- end of content -->
+        
+     
+    
+    </div> <!-- end of main -->
+</div>
+
+</body>
+</html>
+

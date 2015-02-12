@@ -1,0 +1,42 @@
+﻿@model ClassManagement.Models.Student
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_studlayout.cshtml";
+}
+
+
+<body>
+
+        
+        
+
+                        <h1> Profile </h1> 
+                     
+                        <br /> 
+                           
+                        
+                        <div class="input">
+                            <br />
+                            <br />
+                            <table border="3" style="width:100%">
+                                  <tr>
+                                    <td>Id</td>
+                                    <td>Name</td> 
+                                    <td>Fathername</td>
+                                      <td>Degree</td>
+                                      <td>CGPA</td>
+                                      <td>Email</td>
+                                  </tr>
+                                  <tr>
+                                    <td>@Model.Id</td>
+                                    <td>@Model.Name</td> 
+                                    <td>@Model.F_Name</td>
+                                    <td>@Model.Degree</td>
+                                      <td>@Model.Cgpa</td>
+                                      <td>@Model.Email</td>
+</td>
+                                  </tr>
+                                </table>
+
+                            </body>
+                         

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ClassManagement.Models.attendance>
+@{
+    ViewBag.Title = "showattendance";
+    Layout = "~/Views/Shared/_studlayout.cshtml";
+}
+
+
+
+                        <h1> Course Outline </h1> 
+                        
+                        <br /> 
+                           
+                        
+                        <div class="input">
+                        
+                        <label for="subject">Select Subject: </label>
+
+                        <form method="post" action="/Student/showattendance/Bcsf11a108">
+                                <select name="subject" id="subject" class="required">
+
+                               <option>- Select -</option>
+
+                                <option>1.Compiler Construction</option>
+                                <option>2.Parallel Programming</option>
+                                <option>3.EAD</option>
+                                <option>4.Mobile Computing</option> 
+                                    </select>
+                                
+
+                  
+                        <input type="submit" value="View Attendance"/>
+                        </form>
+              <br />
+                           <br />
+                        <br />
+
+                        
+                        <div id="attendancetable" class="input">
+                            <table border="1" style="width:100%">
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Coursename</td>
+                                    <td> Date</td>
+                                    <td> Attendance</td>
+
+                                </tr> 
+
+                          @foreach(var v in @Model)
+                                {
+                                    <tr>
+                                        <td>@v.SID</td>
+                                        <td>@v.coursename</td>
+                                        <td>@v.Date</td>
+                                        <td>@v.attendance1</td>
+                                        </tr>
+                                      
+                                } 
+
+                            </table>
+ </div>
+                            </div>

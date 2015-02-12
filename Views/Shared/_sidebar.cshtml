@@ -1,0 +1,149 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Class Management System</title>
+<meta name="keywords" content="mini social, free download, website templates, CSS, HTML" />
+<meta name="description" content="Mini Social is a free website template from templatemo.com" />
+
+<link href="~/Content/templatemo_style.css" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" href="~/Content/coda-slider.css" type="text/css" media="screen" charset="utf-8" />
+
+@*<script src="~/script/jquery-1.2.6.js" type="text/javascript"></script>*@
+<script src="~/Script/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="~/Script/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Script/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Scripts/jquery-1.2.6.js"></script>
+
+    <script>
+        
+        $(document).ready(function () {
+            var flag = 0;
+            $('#dd').hide();
+            $("#d1").mouseover(function () {
+                if (flag == 0) {
+                    $('#dd').show();
+                    flag = 1;
+                }
+
+                else  if (flag == 1) {
+                    $('#dd').hide();
+                    flag = 0;
+                }
+            });
+             
+            
+
+        });
+    </script>
+
+<style type="text/css">
+    .buttons { 
+  width: 30%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: green; 
+  margin:auto;
+  
+}
+.buttons button { 
+  width: 100%;
+}
+
+    .input {
+        margin-left:60px;
+       
+       
+    }
+    .textfield {
+        background-color:black;
+    }
+    .cgpa {
+        margin-left:350px;
+       
+        
+    }
+</style>
+
+</head>
+
+    
+<body>
+
+<div id="slider">
+	
+    <div id="templatemo_sidebar">
+    	<div id="templatemo_header">
+        	<h1> Online Class Management System </h1>
+        </div> <!-- end of header -->
+     
+     
+     @RenderPage("~/Views/Shared/_layoutpage.cshtml")
+
+	<div id="templatemo_main">
+
+    	  @RenderPage("~/Views/Shared/_header.cshtml")
+        <div id="content">
+        
+        <!-- scroll -->
+        
+        	
+            <div class="scroll">
+                <div class="scrollContainer">
+                
+                    <div class="panel" id="home">
+
+                        <h1> Profile </h1> 
+                        <div class="cgpa">
+                        <label>CGPA: <input style="background-color:Black; color:lime" type="text" id="cgpa" name="Name"  /></label>
+                            </div>
+                        <br /> 
+                           
+                        
+                        <div class="input">
+                            <br />
+                            <br />
+                          <label>Name: <input style="background-color:Black; color:lime" ; type="text" id="User" name="Name"  /></label>
+                           <label>FatherName: <input style="background-color:Black; color:lime" type="text" id="User1" name="Name"  /></label>
+                            <br />
+                            <br />
+                         
+                            <label>Rollno: <input style="background-color:Black; color:lime" type="text" id="User2" name="Name"  /></label>
+                         
+                            <label>Email: <input style="background-color:Black; color:lime" type="text" id="User3" name="Name"  /></label>
+
+                            <br />
+                            <br /> 
+                            <label>Degree: <input style="background-color:Black; color:lime" type="text" id="User4" name="Name"  /></label>
+                            <br />
+                            <br />
+                            <label>CGPA: <input style="background-color:Black; color:lime" type="text" id="cgpa" name="Name"  /></label>
+                           
+                           
+
+                         
+                           
+                </div>
+                        
+                      <div class="cleaner_h40"></div> 
+                    
+                        
+                
+                    </div> 
+                    <!-- end of home -->
+
+
+                  
+            
+     
+    
+    </div> <!-- end of main -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿
+
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+
+                        <h1> Course Outline </h1> 
+                        <div class="cgpa">
+                       
+                            </div>
+                        <br /> 
+                           
+                        
+                        <div class="input">
+                          @using (Html.BeginForm("save", "home", FormMethod.Post, new {enctype="multipart/form-data"}))
+                         {
+                                <label for="subject">Select Subject: </label>
+
+                                <select name="subject" id="subject" class="required">
+
+                               <option>- Select -</option>
+
+                                <option>1.Compiler Construction</option>
+                                <option>2.Parallel Programming</option>
+                                <option>3.EAD</option>
+                                <option>4.Mobile Computing</option>
+                                </select>
+              <br />
+                              <br />
+                              
+                              <label for="subject">Select Type </label>
+
+                                <select name="filevalue" id="filevalue" class="required">
+
+                               <option>- Select -</option>
+
+                                <option>Assignment</option>
+                                <option>Lecture Notes</option>
+                                <option>Course Outline</option>
+                                <option>Mark sheets</option>
+                               
+                                </select>
+              <br />
+                              <br />
+                                    <input type="file" name="FileUpload1" />
+                            
+                                     <input type="submit" name="Submit" id="Submit" value="Upload" />
+                         }
+
+                         
+                           
+                </div>
+                        

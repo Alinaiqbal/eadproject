@@ -1,0 +1,49 @@
+﻿
+
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+
+                        <h1> HomeTask/Assignment </h1> 
+                        <div class="cgpa">
+                       
+                            </div>
+                        
+                           
+                        
+                  
+                        <br />
+                        <br />
+
+                       <div class="input1">
+                          @using (Html.BeginForm("save1", "home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                          {
+                             <label for="subject">Select Subject: </label>
+
+                                <select name="subject" id="subject" class="required">
+
+                               <option>- Select -</option>
+
+                                <option>1.Compiler Construction</option>
+                                <option>2.Parallel Programming</option>
+                                <option>3.EAD</option>
+                                <option>4.Mobile Computing</option>
+                                </select>
+                                    <br />
+                              <br />
+                              
+            
+                              @*  <input style="background-color:Black; color:lime" ; type="text" id="task" name="hometask"/> *@
+                            <label for="text">HomeTask:</label> 
+                              <textarea id="text" name="text" rows="10" cols="50" class="required"></textarea>
+                           
+                              <br />
+                              <br />
+                                     <input type="submit" name="Submit" id="Submit1" value="Save" />
+                          }
+
+                         
+                           
+                </div>
+                        

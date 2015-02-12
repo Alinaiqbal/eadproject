@@ -1,0 +1,38 @@
+﻿@model ClassManagement.Models.Student
+
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+                        <h1> Update Profile </h1> 
+                      
+                       
+                    <form method="post" action="/home/update1/@Model.Id" >
+                        <div class="input">
+                            <br />
+                            <br />
+                          <label>Name: <input style="background-color:Black; color:lime" ; type="text" id="User" name="name" value="@Model.Name" /></label>
+                           <label>FatherName: <input style="background-color:Black; color:lime" type="text" id="User1" name="fname" value="@Model.F_Name" /></label>
+                            <br />
+                            <br />
+                         
+                           
+                            <label>Email: <input style="background-color:Black; color:lime" type="text" id="User3" name="email" value="@Model.Email" /></label>
+                            
+
+                            <br />
+                            <br /> 
+                            <label>Degree: <input style="background-color:Black; color:lime" type="text" id="User4" name="degree" value="@Model.Degree"  /></label>
+                            <br />
+                            <br />
+                            <label>CGPA: <input style="background-color:Black; color:lime" type="text" id="cgpa" name="cgpa" value="@Model.Cgpa" /></label>
+                           
+                             <input type="submit" value="UpdateProfile" />
+                  </div>         
+
+                      </form>   
+                           
+               
+
+                  
+  

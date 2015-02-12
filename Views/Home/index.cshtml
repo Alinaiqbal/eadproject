@@ -1,0 +1,31 @@
+﻿@model ClassManagement.Models.Admin
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+<body>
+                        <h1>User Profile</h1>
+                        <br />
+                        <br />
+                            <table border="1" style="width:100%">
+                                  <tr>
+                                    <td>Id</td>
+                                    <td>Name</td> 
+                                    <td>Qualification</td>
+                                      <td>Subject</td>
+                                  </tr>
+                                  <tr>
+                                    <td>@Model.Id</td>
+                                    <td>@Model.Name</td> 
+                                    <td>@Model.Qualification</td>
+                                    <td>@Model.Subject</td>
+                                  </tr>
+                                </table>
+                        <br />
+                        <br />
+                        <br />
+    </body>
+                     
+                       
+
+              

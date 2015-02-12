@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ClassManagement.Models.Course>
+@{
+    ViewBag.Title = "showresult";
+    Layout = "~/Views/Shared/_studlayout.cshtml";
+}
+
+    <h1>UserUpdates</h1>
+     <br />
+     <br />
+                            <table border="1" style="width:100%">
+                                <tr>
+                                    <td> SID</td>
+                                    
+                                    <td>COURSE RESULT</td>
+                               
+                                    <td> ObtainedMarks</td>
+                                    <td>  TotalMarks </td>
+                                    <td>   Mid</td>
+                                    <td> Final</td>
+                                    <td> Sessional</td>
+
+                                </tr> 
+
+                          @foreach(var v in @Model)
+                                {
+                                    <tr>
+                                        <td>@v.SID</td>
+                                        <td>@v.coursename</td>
+                                        <td>@v.totalmarks</td>
+                                        <td>@v.out_of</td>
+                                        <td>@v.mids</td>
+                                        <td>@v.finals</td>
+                                        <td>@v.sessionals</td>
+                                    
+                                        </tr>
+                                      
+                                } 
+
+                            </table>

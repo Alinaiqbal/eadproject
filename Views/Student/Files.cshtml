@@ -1,0 +1,64 @@
+﻿@model List<ClassManagement.Models.userfile>
+    @{
+    ViewBag.Title = "Files";
+    Layout = "~/Views/Shared/_studlayout.cshtml";
+}
+
+                        <h1> Files </h1> 
+                        
+                    
+                          
+                        
+                        <div class="input">
+                         
+                            <table border="1" style="width:100%">
+                                <tr>
+                                    <td> CID</td>
+                                    
+                                    <td>Files</td>
+                                    <td>Filetype</td>
+                                    <td>Download Link</td>
+
+                                </tr> 
+
+                          @foreach(var v in @Model)
+                                {
+                                    <tr>
+                                        <td>@v.CID</td>
+                                        <td>@v.files</td>
+                                        <td>@v.filetype</td>
+                                         <td><a href="/home/files">download</a></td>
+                                    
+                                        </tr>
+                                      
+                                } 
+
+                            </table>
+                          
+                           
+                </div>
+                        
+                      <div class="cleaner_h40"></div> 
+                    
+                        
+                
+                    </div> 
+                    <!-- end of home -->
+
+
+                    
+                     
+               
+			</div>
+            
+        <!-- end of scroll -->
+        
+        </div> <!-- end of content -->
+        
+     
+    
+    </div> <!-- end of main -->
+</div>
+
+</body>
+</html>

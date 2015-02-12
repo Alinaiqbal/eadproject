@@ -1,0 +1,45 @@
+﻿@*@model ClassManagement.Models.Student*@
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+
+
+
+                        <h1> ADD PROFILE </h1> 
+                       
+                     
+                       
+                    <form method="post" action="/home/addstudent" >
+                        <div class="col-sm-offset-3 col-md-6">
+                        <div class="input">
+                            <label>ID: <input style="background-color:Black; color:lime" ; type="text" id="User" name="id" autocomplete="off" /></label>
+                            <br />
+                            <br />
+                          <label>Name: <input style="background-color:Black; color:lime" ; type="text" id="User7" name="name" autocomplete="off" /></label>
+                           <br />
+                            <br />
+                            
+                            <label>FNAME: <input style="background-color:Black; color:lime" type="text" id="User1" name="fname" autocomplete="off" /></label>
+                            <br />
+                            <br />
+                         
+                         
+                         
+                            <label>Email: <input style="background-color:Black; color:lime" type="text" id="User3" name="email" autocomplete="off" /></label>
+                            
+
+                            <br />
+                            <br /> 
+                            <label>Degree: <input style="background-color:Black; color:lime" type="text" id="User4" name="degree"  autocomplete="off" /></label>
+                            <br />
+                            <br />
+                            <label>CGPA: <input style="background-color:Black; color:lime" type="text" id="cgpa" name="cgpa" autocomplete="off" /></label>
+                           
+                             <input type="submit" value="ADD Profile" />
+                  </div> 
+                            </div>       
+
+                      </form>   
+        
+   

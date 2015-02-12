@@ -1,0 +1,33 @@
+﻿@* @model List<ClassManagement.Models.attendance> *@
+@{
+    ViewBag.Title = "studindex";
+    Layout = "~/Views/Shared/_studlayout";
+}
+
+
+
+                        <h1> ViewAttendance</h1> 
+                      
+                        <label for="subject">Select Subject: </label>
+
+                        <form method="post" action="/Student/showattendance/bcsf11a108">
+                                <select name="subject" id="subject" class="required">
+
+                               <option>- Select -</option>
+
+                                <option>1.Compiler Construction</option>
+                                <option>2.Parallel Programming</option>
+                                <option>3.EAD</option>
+                                <option>4.Mobile Computing</option> 
+                                    </select>
+                                
+
+                  
+                        <input type="submit" value="View Attendance"/>
+                        </form>
+              <br />
+                           <br />
+                        <br />
+
+                        
+  
